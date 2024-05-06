@@ -19,7 +19,10 @@ import { recomendations } from '@config/recommended.json';
             <li>
               <figure>
                 {img && img ? (
-                  <img src={img} alt={firstName + ' ' + lastName} />
+                  <img
+                    src={`/images/${img}.jpeg`}
+                    alt={firstName + ' ' + lastName}
+                  />
                 ) : (
                   <img
                     src="/images/noPhoto.webp"
